@@ -14,6 +14,13 @@ const Index = () => {
       
       <Header />
       
+      {/* Tour Dates Section - Moved to top */}
+      <TourDates />
+      
+      <div className="max-w-5xl mx-auto px-4">
+        <Separator className="border-2 border-dashed border-white" />
+      </div>
+      
       {/* Band Members Section */}
       <section className="py-8 px-4 max-w-4xl mx-auto">
         <div className="flex items-center justify-center mb-6">
@@ -78,12 +85,6 @@ const Index = () => {
           </button>
         </div>
       </section>
-      
-      <div className="max-w-5xl mx-auto px-4">
-        <Separator className="border-2 border-dashed border-white" />
-      </div>
-      
-      <TourDates />
       
       <div className="max-w-5xl mx-auto px-4">
         <Separator className="border-2 border-dashed border-white" />
