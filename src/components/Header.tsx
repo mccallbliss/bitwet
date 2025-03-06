@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         </div>
         
         <p className="text-xl md:text-2xl font-bold text-y2k-purple mt-2 animate-bounce-light">
-          Y2K World Tour 2023-2024
+          davvn x Jack The Underdog
         </p>
         
         <div className="visitor-counter mt-4 mx-auto max-w-xs">
