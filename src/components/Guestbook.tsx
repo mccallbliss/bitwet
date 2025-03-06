@@ -16,19 +16,19 @@ const initialEntries: GuestbookEntry[] = [
     id: 1,
     name: "XxEmOQuEeN2003xX",
     message: "OMG I can't wait for the tour!!! You guys are literally my favorite band ever!!! <3 <3 <3",
-    timestamp: "08/12/2023"
+    timestamp: "05/05/2025"
   },
   {
     id: 2,
     name: "sk8erboi_4ever",
     message: "Just got my tickets for the Chicago show!! Who else is going?? Let's meet up!!",
-    timestamp: "08/10/2023"
+    timestamp: "05/05/2025"
   },
   {
     id: 3,
     name: "sparkle_princess",
     message: "I've been a fan since your first album!!! Can't believe I'm finally going to see you live! XOXO",
-    timestamp: "08/05/2023"
+    timestamp: "05/05/2025"
   }
 ];
 

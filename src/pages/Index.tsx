@@ -14,7 +14,7 @@ const Index = () => {
       
       <Header />
       
-      {/* Tour Dates Section - Moved to top */}
+      {/* Tour Dates Section */}
       <TourDates />
       
       <div className="max-w-5xl mx-auto px-4">
@@ -25,16 +25,15 @@ const Index = () => {
       <section className="py-8 px-4 max-w-4xl mx-auto">
         <div className="flex items-center justify-center mb-6">
           <div className="w-3 h-3 bg-y2k-green rounded-full animate-sparkle mr-2" />
-          <h2 className="text-3xl font-bold text-y2k-blue inline-block">Meet The Band!</h2>
+          <h2 className="text-3xl font-bold text-y2k-blue inline-block">Meet The Bands!</h2>
           <div className="w-3 h-3 bg-y2k-green rounded-full animate-sparkle ml-2" />
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { name: "Pixel Princess", role: "Lead Vocals", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
-            { name: "Digital Dave", role: "Guitar", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366CCFF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
-            { name: "Techno Tina", role: "Bass", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
-            { name: "Cyber Charlie", role: "Drums", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366FF99'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" }
+            { name: "McCall", role: "davvn - Lead Vocals", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
+            { name: "Mike", role: "davvn - Guitar", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366CCFF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
+            { name: "Jack", role: "Jack The Underdog", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
           ].map((member, index) => (
             <div key={index} className="y2k-border bg-white p-4 rounded-lg text-center transform hover:rotate-1 transition-transform">
               <img 

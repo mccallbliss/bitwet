@@ -43,12 +43,13 @@ const Header: React.FC = () => {
         </div>
         
         <p className="text-xl md:text-2xl font-bold text-y2k-purple mt-2 animate-bounce-light">
-          davvn x Jack The Underdog
+          davvn x Jack The Underdog * Tour 2024
         </p>
         
         <div className="visitor-counter mt-4 mx-auto max-w-xs">
           <p className="text-xs mb-1">You are visitor #</p>
           <div className="flex justify-center text-sm">
+            {/* Get actual visitor count from localstorage */}
             <span className="inline-block bg-black text-white px-2 mx-px">1</span>
             <span className="inline-block bg-black text-white px-2 mx-px">3</span>
             <span className="inline-block bg-black text-white px-2 mx-px">3</span>

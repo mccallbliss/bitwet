@@ -18,14 +18,14 @@ const Footer: React.FC = () => {
           <p className="text-y2k-purple font-bold mb-3">Connect with us:</p>
           
           <div className="flex justify-center space-x-4">
-            <button className="y2k-button bg-y2k-blue">MySpace</button>
+            <a href="https://spacehey.com/davvnmusic" target="_blank"><button className="y2k-button bg-y2k-blue">MySpace</button></a>
             <button className="y2k-button bg-y2k-purple">AIM</button>
             <button className="y2k-button">MSN</button>
           </div>
         </div>
         
         <div className="text-sm text-y2k-purple mt-6">
-          <p>© 2003 Nostalgia Band. All rights reserved.</p>
+          <p>© 2008 davvn. All rights reserved.</p>
           <p className="mt-1">This site looks best in Internet Explorer 6.0 at 800x600 resolution</p>
           <div className="flex justify-center mt-2">
             <img 
