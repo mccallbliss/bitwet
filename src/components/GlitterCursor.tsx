@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import { Star } from "lucide-react";
 
 interface GlitterPoint {
   id: number;
@@ -8,6 +9,7 @@ interface GlitterPoint {
   size: number;
   color: string;
   opacity: number;
+  rotation: number;
 }
 
 const colors = ["#FF66B2", "#66CCFF", "#9966FF", "#FFFF66", "#66FF99"];
@@ -25,6 +27,7 @@ const GlitterCursor: React.FC = () => {
         size: Math.random() * 10 + 5,
         color: colors[Math.floor(Math.random() * colors.length)],
         opacity: 1,
+        rotation: Math.random() * 360,
       };
 
       setGlitters((prev) => {
@@ -40,6 +43,7 @@ const GlitterCursor: React.FC = () => {
             ...glitter,
             opacity: glitter.opacity - 0.02,
             size: glitter.size - 0.1,
+            rotation: glitter.rotation + 2,
           }))
           .filter((glitter) => glitter.opacity > 0 && glitter.size > 0)
       );
@@ -64,14 +68,19 @@ const GlitterCursor: React.FC = () => {
             top: glitter.y,
             width: `${glitter.size}px`,
             height: `${glitter.size}px`,
-            backgroundColor: glitter.color,
-            borderRadius: "50%",
             opacity: glitter.opacity,
-            transform: "translate(-50%, -50%)",
+            transform: `translate(-50%, -50%) rotate(${glitter.rotation}deg)`,
             pointerEvents: "none",
             zIndex: 9999,
+            color: glitter.color,
           }}
-        />
+        >
+          <Star 
+            size={glitter.size} 
+            fill={glitter.color} 
+            stroke={glitter.color}
+          />
+        </div>
       ))}
     </div>
   );
