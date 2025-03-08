@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="py-6 px-4 mb-8 relative overflow-hidden">
+    <header className="py-6 px-4 mb-4 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="star absolute top-5 left-10" />
       <div className="star absolute top-20 right-14" />
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
           davvn x Jack The Underdog * Tour 2024
         </p>
         
-        <div className="visitor-counter mt-4 mx-auto max-w-xs">
+        <div className="visitor-counter mt-2 mx-auto max-w-xs">
           <p className="text-xs mb-1">You are visitor #</p>
           <div className="flex justify-center text-sm">
             {/* Get actual visitor count from localstorage */}
