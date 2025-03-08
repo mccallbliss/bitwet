@@ -6,6 +6,7 @@ import Guestbook from "@/components/Guestbook";
 import Footer from "@/components/Footer";
 import GlitterCursor from "@/components/GlitterCursor";
 import BandMemberBio from "@/components/BandMemberBio";
+import TourExperiences from "@/components/TourExperiences";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -94,9 +95,7 @@ const Index = () => {
         </div>
         
         <div className="text-center mt-6">
-          <button className="y2k-button bg-y2k-green">
-            <span className="rainbow-text">⋆</span> View Album <span className="rainbow-text">⋆</span>
-          </button>
+          <TourExperiences />
         </div>
       </section>
       

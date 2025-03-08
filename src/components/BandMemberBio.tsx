@@ -8,6 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 
@@ -45,7 +46,9 @@ const BandMemberBio = ({ name, role, img, bio }: BandMemberProps) => {
             <DialogTitle className="text-2xl font-bold drop-shadow-[2px_2px_0_rgba(0,0,0,0.3)]">
               <span className="rainbow-text">★</span> {name}'s Bio <span className="rainbow-text">★</span>
             </DialogTitle>
-            <X className="h-6 w-6 cursor-pointer hover:scale-110 transition-transform" />
+            <DialogClose asChild>
+              <X className="h-6 w-6 cursor-pointer hover:scale-110 transition-transform" />
+            </DialogClose>
           </div>
         </DialogHeader>
         
