@@ -15,7 +15,7 @@ const Index = () => {
       name: "McCall", 
       role: "davvn - Lead Vocals", 
       img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
-      bio: "McCall is the energetic lead vocalist of davvn, known for her powerful voice and stage presence. She's been singing since she was 5 years old and draws inspiration from 2000s pop icons. When not on stage, she's designing Y2K-inspired fashion and collecting vintage tech."
+      bio: "McCall is the energetic lead vocalist of davvn, known for her unique voice and bubbly stage presence. She's been singing since she was 9 years old and draws inspiration from Y2K pop/rock icons. When not on stage, she's designing webistes and collecting 2000's era tech."
     },
     { 
       name: "Mike", 
@@ -27,7 +27,7 @@ const Index = () => {
       name: "Jack", 
       role: "Jack The Underdog", 
       img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
-      bio: "Jack The Underdog is a solo artist who blends nostalgia with modern beats. Rising from humble beginnings, Jack has created a sound that's uniquely 2000s yet fresh. He's known for his interactive performances and connecting with fans through social media. His favorite things include pixel art, flip phones, and butterfly clips."
+      bio: "Jack The Underdog is a solo artist who blends nostalgia with modern beats. Rising from humble beginnings, Jack has created a sound that's uniquely 2000s yet fresh. He's known for his interactive performances and connecting with fans through social media."
     },
   ];
 
