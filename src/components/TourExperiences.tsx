@@ -11,6 +11,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
+import VIPExperienceDialog from "./VIPExperienceDialog";
 
 type ExperienceProps = {
   title: string;
@@ -133,9 +134,11 @@ const TourExperiences = () => {
                 Upgrade to VIP for exclusive access to ALL experiences without waiting in line, 
                 plus a special Y2K-themed gift bag with limited edition merchandise!
               </p>
-              <button className="bg-y2k-hotPink text-white px-6 py-2 rounded-lg font-bold border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] hover:bg-y2k-purple transition-colors">
-                🌟 UPGRADE TO VIP 🌟
-              </button>
+              <VIPExperienceDialog>
+                <button className="bg-y2k-hotPink text-white px-6 py-2 rounded-lg font-bold border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] hover:bg-y2k-purple transition-colors">
+                  🌟 UPGRADE TO VIP 🌟
+                </button>
+              </VIPExperienceDialog>
             </div>
           </div>
         </div>

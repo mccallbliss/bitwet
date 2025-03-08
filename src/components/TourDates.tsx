@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Badge } from "@/components/ui/badge";
+import VIPExperienceDialog from "./VIPExperienceDialog";
 
 interface TourDate {
   id: number;
@@ -69,9 +70,11 @@ const TourDates: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <button className="y2k-button">
-          <span className="rainbow-text">✧･ﾟ</span> Get VIP Passes <span className="rainbow-text">✧･ﾟ</span>
-        </button>
+        <VIPExperienceDialog>
+          <button className="y2k-button">
+            <span className="rainbow-text">✧･ﾟ</span> Get VIP Passes <span className="rainbow-text">✧･ﾟ</span>
+          </button>
+        </VIPExperienceDialog>
       </div>
     </section>
   );
