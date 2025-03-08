@@ -5,9 +5,31 @@ import TourDates from "@/components/TourDates";
 import Guestbook from "@/components/Guestbook";
 import Footer from "@/components/Footer";
 import GlitterCursor from "@/components/GlitterCursor";
+import BandMemberBio from "@/components/BandMemberBio";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
+  const bandMembers = [
+    { 
+      name: "McCall", 
+      role: "davvn - Lead Vocals", 
+      img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
+      bio: "McCall is the energetic lead vocalist of davvn, known for her powerful voice and stage presence. She's been singing since she was 5 years old and draws inspiration from 2000s pop icons. When not on stage, she's designing Y2K-inspired fashion and collecting vintage tech."
+    },
+    { 
+      name: "Mike", 
+      role: "davvn - Guitar", 
+      img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366CCFF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
+      bio: "Mike is davvn's guitar virtuoso, bringing melodic riffs and nostalgic sounds to every performance. He started playing guitar after finding his dad's old instrument in the attic. He's obsessed with early 2000s rock bands and has an impressive collection of vintage guitar pedals."
+    },
+    { 
+      name: "Jack", 
+      role: "Jack The Underdog", 
+      img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
+      bio: "Jack The Underdog is a solo artist who blends nostalgia with modern beats. Rising from humble beginnings, Jack has created a sound that's uniquely 2000s yet fresh. He's known for his interactive performances and connecting with fans through social media. His favorite things include pixel art, flip phones, and butterfly clips."
+    },
+  ];
+
   return (
     <div className="min-h-screen">
       <GlitterCursor />
@@ -30,21 +52,14 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[
-            { name: "McCall", role: "davvn - Lead Vocals", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
-            { name: "Mike", role: "davvn - Guitar", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366CCFF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
-            { name: "Jack", role: "Jack The Underdog", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E" },
-          ].map((member, index) => (
-            <div key={index} className="y2k-border bg-white p-4 rounded-lg text-center transform hover:rotate-1 transition-transform">
-              <img 
-                src={member.img} 
-                alt={member.name} 
-                className="w-32 h-32 mx-auto mb-3 pixel-photo"
-              />
-              <h3 className="text-xl font-bold text-y2k-hotPink">{member.name}</h3>
-              <p className="text-y2k-purple">{member.role}</p>
-              <p className="text-xs mt-2 text-gray-500">♡ Click to read bio ♡</p>
-            </div>
+          {bandMembers.map((member, index) => (
+            <BandMemberBio 
+              key={index}
+              name={member.name}
+              role={member.role}
+              img={member.img}
+              bio={member.bio}
+            />
           ))}
         </div>
       </section>
