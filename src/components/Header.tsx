@@ -1,8 +1,12 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 const Header: React.FC = () => {
   const [rotation, setRotation] = useState(0);
+  const visitorCount = useMemo(() => {
+    var numRand = Math. floor(Math. random() * 10001);     
+    return String(numRand).split("");
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,10 +54,9 @@ const Header: React.FC = () => {
           <p className="text-xs mb-1">You are visitor #</p>
           <div className="flex justify-center text-sm">
             {/* Get actual visitor count from localstorage */}
-            <span className="inline-block bg-black text-white px-2 mx-px">1</span>
-            <span className="inline-block bg-black text-white px-2 mx-px">3</span>
-            <span className="inline-block bg-black text-white px-2 mx-px">3</span>
-            <span className="inline-block bg-black text-white px-2 mx-px">7</span>
+            {visitorCount.map((digit, index) => (
+              <span key={index} className="inline-block bg-black text-white px-2 mx-px">{digit}</span>
+            ))}
           </div>
         </div>
       </div>
