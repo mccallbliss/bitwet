@@ -33,26 +33,26 @@ const Experience = ({ title, description, icon, color }: ExperienceProps) => (
 const TourExperiences = () => {
   const experiences = [
     {
-      title: "Photo Booth",
+      title: "MySpace Photo Booth",
       description: "Strike a pose with your besties and take home printed photo strips with glitter frames and Y2K-themed digital stickers!",
       icon: <Camera className="text-white" size={24} />,
       color: "y2k-hotPink"
     },
     {
       title: "Temporary Tattoo Station",
-      description: "Get decked out with nostalgic temporary tattoos featuring butterflies, tribal designs, and your favorite band logos!",
+      description: "Get decked out with nostalgic temporary tattoos featuring butterflies, cybersygilism designs, and your favorite band logos!",
       icon: <Palette className="text-white" size={24} />,
       color: "y2k-purple"
     },
     {
-      title: "Scholastic Book Fair",
+      title: "Adult Scholastic Book Fair",
       description: "Browse through Y2K-era teen magazines, sticker books, and posters just like the good old days at school!",
       icon: <Book className="text-white" size={24} />,
       color: "y2k-blue"
     },
     {
       title: "VHS Memory Booth",
-      description: "Record a short video message on a real VHS tape that will be compiled into a tour documentary!",
+      description: "Record a short video message on a real Camcorder that will be compiled into a tour documentary!",
       icon: <Camera className="text-white" size={24} />,
       color: "y2k-green"
     },
@@ -63,8 +63,8 @@ const TourExperiences = () => {
       color: "y2k-yellow"
     },
     {
-      title: "CD Signing Experience",
-      description: "Purchase a special edition tour CD and get it signed by davvn and Jack The Underdog after the show!",
+      title: "Poster Signing Experience",
+      description: "Purchase a special edition tour poster and get it signed by davvn and Jack The Underdog after the show!",
       icon: <Music className="text-white" size={24} />,
       color: "y2k-hotPink"
     },
