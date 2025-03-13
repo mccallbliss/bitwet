@@ -17,9 +17,13 @@ type BandMemberProps = {
   role: string;
   img: string;
   bio?: string;
+  favoriteSong?: string;
+  hometown?: string;
+  favoriteEmoji?: string;
+  hobby?: string;
 };
 
-const BandMemberBio = ({ name, role, img, bio }: BandMemberProps) => {
+const BandMemberBio = ({ name, role, img, bio, favoriteSong, hometown, favoriteEmoji, hobby }: BandMemberProps) => {
   const defaultBio = `${name} is an amazing performer with a unique style and incredible talent. 
   They've been performing since they were young and continue to wow audiences everywhere!`;
 
@@ -85,16 +89,16 @@ const BandMemberBio = ({ name, role, img, bio }: BandMemberProps) => {
             
             <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
               <div className="bg-y2k-lightPink p-2 rounded-md border border-y2k-pink">
-                <span className="font-bold">Favorite song:</span> "Y2K Dreamin'"
+                <span className="font-bold">Favorite song:</span> {favoriteSong || "Lucky by Britney Spears"}
               </div>
               <div className="bg-y2k-lightPink p-2 rounded-md border border-y2k-pink">
-                <span className="font-bold">Hometown:</span> Internet, CA
+                <span className="font-bold">Hometown:</span> {hometown ?? "Internet, CA"}
               </div>
               <div className="bg-y2k-lightPink p-2 rounded-md border border-y2k-pink">
-                <span className="font-bold">Fav emoji:</span> ✨
+                <span className="font-bold">Fav emoji:</span> {favoriteEmoji ?? '✨'}
               </div>
               <div className="bg-y2k-lightPink p-2 rounded-md border border-y2k-pink">
-                <span className="font-bold">Hobby:</span> Vintage shopping
+                <span className="font-bold">Hobby:</span> {hobby ?? "Vintage shopping"}
               </div>
             </div>
           </DialogDescription>

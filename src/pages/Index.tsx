@@ -15,19 +15,31 @@ const Index = () => {
       name: "McCall", 
       role: "davvn - Lead Vocals", 
       img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
-      bio: "McCall is the energetic lead vocalist of davvn, known for her unique voice and bubbly stage presence. She's been singing since she was 9 years old and draws inspiration from Y2K pop/rock icons. When not on stage, she's designing webistes and collecting 2000's era tech."
+      bio: "McCall is the energetic lead vocalist of davvn, known for her unique voice and bubbly stage presence. She's been singing since she was 9 years old and draws inspiration from Y2K pop/rock icons. When not on stage, she's designing webistes and collecting 2000's era tech.",
+      favoriteSong: "Losing Grip by Avril Lavigne",
+      hometown: "Las Vegas + The Twin Cities",
+      favoriteEmoji: "🫣",
+      hobby: "bedazzling or making Sims she never plays",
     },
     { 
       name: "Mike", 
       role: "davvn - Guitar", 
       img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366CCFF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
-      bio: "Mike is davvn's guitar virtuoso, bringing melodic riffs and nostalgic sounds to every performance. He started playing guitar after finding his dad's old instrument in the attic. He's obsessed with early 2000s rock bands and has an impressive collection of vintage guitar pedals."
+      bio: "Mike is davvn's guitar virtuoso, bringing melodic riffs and nostalgic sounds to every performance. He started playing guitar after finding his dad's old instrument in the attic. He's obsessed with early 2000s rock bands and has an impressive collection of vintage guitar pedals.",
+      favoriteSong: "",
+      hometown: "Boston, MA",
+      favoriteEmoji: "🎤",
+      hobby: "cutting down trees on runescape",
     },
     { 
       name: "Jack", 
       role: "Jack The Underdog", 
       img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
-      bio: "Jack The Underdog is a solo artist who blends nostalgia with modern beats. Rising from humble beginnings, Jack has created a sound that's uniquely 2000s yet fresh. He's known for his interactive performances and connecting with fans through social media."
+      bio: "Jack The Underdog is a pop punk artist and songwriter based in Nashville, TN. Jack’s music strives to create a space for all the “underdogs” of society to feel heard, acknowledged, and welcomed in. When listening to Jack’s music, you’ll notice that his songs are influenced by everything from pop punk to hyperpop to hip hop. Between Jack's original music that is reminiscent of early 2000's music with a modern twist and his 'swemo' Taylor Swift covers, there’s something for everyone to enjoy. Jack is also a member of the Riot House (@riothousehq), a Nashville based independent collective of alternative artists that strive to create music & content together and to help amplify the voices within the music community in Nashville, and works at a non-profit to help prevent harassment and assault in the music industry.",
+      favoriteSong: "LosT by Bring Me The Horizon",
+      hometown: "St Paul, MN",
+      favoriteEmoji: "❤️‍🔥 or ✨",
+      hobby: "catching pokemon",
     },
   ];
 
@@ -60,6 +72,10 @@ const Index = () => {
               role={member.role}
               img={member.img}
               bio={member.bio}
+              favoriteSong={member.favoriteSong}
+              hometown={member.hometown}
+              favoriteEmoji={member.favoriteEmoji}
+              hobby={member.hobby}
             />
           ))}
         </div>
@@ -88,7 +104,7 @@ const Index = () => {
                 }}
               />
               <p className="text-center mt-2 text-xs font-bold text-y2k-purple">
-                Summer Tour 2023 - Photo #{photo}
+                BITWE Tour 2025 - Photo #{photo}
               </p>
             </div>
           ))}
