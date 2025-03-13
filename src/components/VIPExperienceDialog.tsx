@@ -67,7 +67,7 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
               </p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border-2 border-y2k-purple transform hover:rotate-1 transition-transform">
+            {/* <div className="bg-white p-4 rounded-lg border-2 border-y2k-purple transform hover:rotate-1 transition-transform">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-y2k-blue mb-3 mx-auto">
                 <Music className="text-white" size={24} />
               </div>
@@ -76,7 +76,7 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
                 Witness an intimate acoustic performance of 3 songs before doors open!
                 Plus get a signed setlist from the artists after the show!
               </p>
-            </div>
+            </div> */}
             
             <div className="bg-white p-4 rounded-lg border-2 border-y2k-purple transform hover:rotate-1 transition-transform">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-y2k-hotPink mb-3 mx-auto">
@@ -89,7 +89,7 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
               </p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border-2 border-y2k-purple transform hover:rotate-1 transition-transform">
+            {/* <div className="bg-white p-4 rounded-lg border-2 border-y2k-purple transform hover:rotate-1 transition-transform">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-y2k-yellow mb-3 mx-auto">
                 <Sparkles className="text-white" size={24} />
               </div>
@@ -98,14 +98,14 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
                 Skip the line with priority early entry! Plus exclusive access to all 
                 interactive experiences before general admission fans!
               </p>
-            </div>
+            </div> */}
           </div>
           
           <Separator className="border-2 border-dashed border-y2k-purple my-6" />
           
           <div className="bg-gradient-to-r from-y2k-green to-y2k-blue p-4 rounded-lg border-2 border-white mt-4">
             <div className="text-center">
-              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-[1px_1px_0_rgba(0,0,0,0.3)]">⭐ VIP PASSES - $99 ⭐</h3>
+              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-[1px_1px_0_rgba(0,0,0,0.3)]">⭐ VIP PASSES - $50 ⭐</h3>
               <p className="text-sm text-white mb-4">
                 <span className="bg-y2k-yellow text-y2k-purple px-2 py-1 rounded font-bold">TBA Additional Surprises!</span> More VIP perks to be 
                 announced closer to tour dates! Your VIP experience keeps getting better!

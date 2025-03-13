@@ -53,7 +53,6 @@ const Header: React.FC = () => {
         <div className="visitor-counter mt-2 mx-auto max-w-xs">
           <p className="text-xs mb-1">You are visitor #</p>
           <div className="flex justify-center text-sm">
-            {/* Get actual visitor count from localstorage */}
             {visitorCount.map((digit, index) => (
               <span key={index} className="inline-block bg-black text-white px-2 mx-px">{digit}</span>
             ))}
