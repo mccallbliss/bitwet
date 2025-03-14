@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       <div className="max-w-5xl mx-auto text-center">
         <div className="marquee-container mb-4 bg-y2k-purple text-white py-2 y2k-border">
           <p className="marquee-text text-lg font-bold">
-            ⭐️ NEW TOUR DATES ADDED!! ⭐️ VIP PACKAGES AVAILABLE NOW!! ⭐️ MEET & GREET SPOTS LIMITED!! ⭐️
+            ⭐️ NEW TOUR DATES ADDED!! ⭐️ VIP PACKAGES AVAILABLE NOW!! ⭐️ TRAVEL BACK IN TIME WITH US!! ⭐️
           </p>
         </div>
         
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
         </div>
         
         <p className="text-xl md:text-2xl font-bold text-y2k-purple mt-2 animate-bounce-light">
-          davvn x Jack The Underdog * Tour 2024
+          davvn x Jack The Underdog ⭐️ Tour 2024
         </p>
         
         <div className="visitor-counter mt-2 mx-auto max-w-xs">

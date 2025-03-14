@@ -74,7 +74,7 @@ const TourExperiences = () => {
     <Dialog>
       <DialogTrigger asChild>
         <button className="y2k-button bg-y2k-green">
-          <span className="rainbow-text">⋆</span> View Album <span className="rainbow-text">⋆</span>
+          <span className="rainbow-text">⋆</span> View Details <span className="rainbow-text">⋆</span>
         </button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-3xl bg-gradient-to-br from-y2k-lightPink to-white p-0 border-4 border-y2k-purple">

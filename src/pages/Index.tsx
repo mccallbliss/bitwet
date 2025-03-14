@@ -13,8 +13,8 @@ const Index = () => {
   const bandMembers = [
     { 
       name: "McCall", 
-      role: "davvn - Lead Vocals", 
-      img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23FF66B2'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
+      role: "davvn", 
+      img: "/bitwet/images/mccall.jpg",
       bio: "McCall is the energetic lead vocalist of davvn, known for her unique voice and bubbly stage presence. She's been singing since she was 9 years old and draws inspiration from Y2K pop/rock icons. When not on stage, she's designing webistes and collecting 2000's era tech.",
       favoriteSong: "Losing Grip by Avril Lavigne",
       hometown: "Las Vegas + The Twin Cities",
@@ -23,8 +23,8 @@ const Index = () => {
     },
     { 
       name: "Mike", 
-      role: "davvn - Guitar", 
-      img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%2366CCFF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
+      role: "davvn", 
+      img: "/bitwet/images/mike.jpg",
       bio: "Mike is davvn's guitar virtuoso, bringing melodic riffs and nostalgic sounds to every performance. He started playing guitar after finding his dad's old instrument in the attic. He's obsessed with early 2000s rock bands and has an impressive collection of vintage guitar pedals.",
       favoriteSong: "Of all the Gin Joints in the World - Fall Out Boy",
       hometown: "Boston, MA",
@@ -34,7 +34,7 @@ const Index = () => {
     { 
       name: "Jack", 
       role: "Jack The Underdog", 
-      img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%239966FF'/%3E%3Ccircle cx='75' cy='55' r='30' fill='%23FFFFFF'/%3E%3Crect x='45' y='85' width='60' height='65' fill='%23FFFFFF'/%3E%3C/svg%3E",
+      img: "/bitwet/images/jtu-2.jpg",
       bio: "Jack The Underdog is a pop punk artist and songwriter based in Nashville, TN. Jack’s music strives to create a space for all the “underdogs” of society to feel heard. When listening to Jack’s music, you’ll hear a wide array on influences - from pop punk to hyperpop to hip hop. Between Jack's original music that brings a modern twist to an early 2000's nostalgic sound, and his 'swemo' Taylor Swift covers, there’s something for everyone to enjoy. Jack is also a member of the Riot House, a Nashville based independent collective of alternative artists that aims to help amplify the voices within the alternative music community in Nashville.",
       favoriteSong: "LosT by Bring Me The Horizon",
       hometown: "St Paul, MN",
@@ -43,7 +43,14 @@ const Index = () => {
     },
   ];
 
-  const tourExperienceIds = ['sbf', 'tts', 'vhs', 'mspb', 'fbs', 'pse'];
+  const tourExperiences = [
+    {name: 'Adult Scholastic Book Fair', id: 'sbf'}, 
+    {name: 'MySpace Photo Booth', id: 'mspb'}, 
+    {name: 'Temporary Tattoo Station', id: 'tts'}, 
+    {name: 'VHS Memory Booth', id: 'vhs'}, 
+    {name: 'Friendship Bracelets', id: 'fbs'}, 
+    {name: 'Poster & CD Signing', id: 'pse'},
+  ];
 
   return (
     <div className="min-h-screen">
@@ -96,17 +103,18 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {tourExperienceIds.map((photoId, index) => (
-            <div key={photoId} className="y2k-border p-2 bg-white rounded-lg transform hover:rotate-2 transition-transform">
+          {tourExperiences.map((xp) => (
+            <div key={xp.id} className="y2k-border p-2 bg-white rounded-lg transform hover:rotate-2 transition-transform">
               <div 
                 className="h-40 bg-gray-200 flex items-center justify-center"
                 style={{
-                  backgroundImage: `url(/images/experience-${photoId}.jpg)`,
-                  backgroundSize: 'cover'
+                  backgroundImage: `url(/bitwet/images/experience-${xp.id}.jpg)`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center center',
                 }}
               />
               <p className="text-center mt-2 text-xs font-bold text-y2k-purple">
-                BITWE Tour 2025 - Photo #{photoId}
+                {xp.name}
               </p>
             </div>
           ))}
