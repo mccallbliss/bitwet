@@ -53,7 +53,7 @@ const BandMemberBio = ({ name, role, img, bio, favoriteSong, hometown, favoriteE
           <img 
             src={img} 
             alt={name} 
-            className="w-32 h-32 mx-auto mb-3 pixel-photo"
+            className="w-32 h-32 mx-auto mb-3 pixel-photo border-4 border-pink shadow-[5px_5px_0_rgba(0,0,0,0.2)]"
           />
           <h3 className="text-xl font-bold text-y2k-hotPink">{name}</h3>
           <p className="text-y2k-purple">{role}</p>
