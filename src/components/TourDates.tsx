@@ -52,7 +52,7 @@ const TourDates: React.FC = () => {
                   <td>{tour.city}</td>
                   <td>{tour.venue}</td>
                   <td>
-                    {tour.link && (
+                    {tour.link ? (
                       <div>
                         {tour.soldOut ? (
                           <Badge link={tour.link} className="bg-red-500 hover:bg-red-600 rainbow-text animate-blink">
@@ -63,6 +63,12 @@ const TourDates: React.FC = () => {
                             Get Tickets!
                           </Badge>
                         )}
+                      </div>
+                    ) : (
+                      <div>
+                        <Badge className="bg-pink-500 hover:bg-pink-600 rainbow-text animate-blink">
+                            Tickets at door!
+                        </Badge>
                       </div>
                     )}
                   </td>
