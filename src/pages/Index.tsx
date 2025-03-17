@@ -47,7 +47,7 @@ const Index = () => {
       favoriteSong: "LosT by Bring Me The Horizon",
       hometown: "St Paul, MN",
       favoriteEmoji: "❤️‍🔥 or ✨",
-      hobby: "catching pokemon",
+      hobby: "catching shiny pokemon",
       twitter: "https://twitter.com/jacktheunderdog",
       instagram: "https://www.instagram.com/jacktheunderdog",
       tiktok: "https://www.tiktok.com/jacktheunderdog",
