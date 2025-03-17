@@ -21,7 +21,7 @@ const tourDates: TourDate[] = [
   { id: 6, city: "Des Moines, IA", venue: "xBk Live", date: "May 24, 2025", link: "https://wl.seetickets.us/event/davvn-and-jack-the-underdog/641550?afflky=xBkLive", soldOut: false },
   { id: 7, city: "Kansas City, MO", venue: "Minibar", date: "May 25, 2025", link: "https://dice.fm/event/mxkmvl-davvn-x-jack-the-underdog-born-in-the-wrong-eras-25th-may-minibar-kansas-city-tickets?pid=530cb286&_branch_match_id=1079957625313546285&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S9Js7A0NjK3sDAzNrYvyEyxNTU2SE4ysjBTqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAU8am40gAAAA%3D", soldOut: false },
   { id: 8, city: "Lawrence, KS", venue: "Replay Lounge", date: "May 26, 2025", soldOut: false },
-  { id: 9, city: "St Louis, MO", venue: "Red Flag", date: "May 27, 2025", soldOut: false },
+  { id: 9, city: "St Louis, MO", venue: "Red Flag", date: "May 27, 2025", link: "https://www.etix.com/ticket/p/59813169/davvn-saint-louis-red-flag", soldOut: false },
   { id: 10, city: "Nashville, TN", venue: "The East Room", date: "May 28, 2025", link: "https://www.ticketweb.com/event/jack-the-underdog-davvn-the-east-room-tickets/14268233?irgwc=1&clickid=xmfVN0SJ1xyKW3c3YPSUi0yjUksw4YT-UzMrxI0&camefrom=CFC_BUYAT_219208&impradid=219208&REFERRAL_ID=tmfeedbuyat219208&wt.mc_id=aff_BUYAT_219208&utm_source=219208-Bandsintown&impradname=Bandsintown&utm_medium=affiliate&ircid=4272", soldOut: false },
 ];
 
@@ -52,7 +52,7 @@ const TourDates: React.FC = () => {
                   <td>{tour.city}</td>
                   <td>{tour.venue}</td>
                   <td>
-                    {tour.city !== 'TBA' && (
+                    {tour.link && (
                       <div>
                         {tour.soldOut ? (
                           <Badge link={tour.link} className="bg-red-500 hover:bg-red-600 rainbow-text animate-blink">
