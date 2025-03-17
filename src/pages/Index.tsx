@@ -14,7 +14,7 @@ const Index = () => {
     { 
       name: "McCall", 
       role: "davvn", 
-      img: "/bitwet/images/mccall.jpg",
+      img: "/images/mccall.jpg",
       bio: "McCall is the energetic lead vocalist of davvn, known for her unique voice and bubbly stage presence. She's been singing since she was 9 years old and draws inspiration from Y2K pop/rock icons. When not on stage, she's designing webistes and collecting 2000's era tech.",
       favoriteSong: "Losing Grip by Avril Lavigne",
       hometown: "Las Vegas + The Twin Cities",
@@ -28,7 +28,7 @@ const Index = () => {
     { 
       name: "Mike", 
       role: "davvn", 
-      img: "/bitwet/images/mike.jpg",
+      img: "/images/mike.jpg",
       bio: "Mike is davvn's guitar virtuoso, bringing melodic riffs and nostalgic sounds to every performance. He started playing guitar after finding his dad's old instrument in the attic. He's obsessed with early 2000s rock bands and has an impressive collection of vintage guitar pedals.",
       favoriteSong: "Of all the Gin Joints in the World - Fall Out Boy",
       hometown: "Boston, MA",
@@ -42,7 +42,7 @@ const Index = () => {
     { 
       name: "Jack", 
       role: "Jack The Underdog", 
-      img: "/bitwet/images/jtu-2.jpg",
+      img: "/images/jtu-2.jpg",
       bio: "Jack The Underdog is a pop punk artist and songwriter based in Nashville, TN. Jack’s music strives to create a space for all the “underdogs” of society to feel heard. When listening to Jack’s music, you’ll hear a wide array on influences - from pop punk to hyperpop to hip hop. Between Jack's original music that brings a modern twist to an early 2000's nostalgic sound, and his 'swemo' Taylor Swift covers, there’s something for everyone to enjoy. Jack is also a member of the Riot House, a Nashville based independent collective of alternative artists that aims to help amplify the voices within the alternative music community in Nashville.",
       favoriteSong: "LosT by Bring Me The Horizon",
       hometown: "St Paul, MN",
@@ -124,7 +124,7 @@ const Index = () => {
               <div 
                 className="h-40 bg-gray-200 flex items-center justify-center"
                 style={{
-                  backgroundImage: `url(/bitwet/images/experience-${xp.id}.jpg)`,
+                  backgroundImage: `url(/images/experience-${xp.id}.jpg)`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center center',
                 }}
@@ -145,6 +145,8 @@ const Index = () => {
         <Separator className="border-2 border-dashed border-white" />
       </div>
       
+      {/* Guestbook Section */}
+
       {/* <Guestbook /> */}
       
       <Footer />
