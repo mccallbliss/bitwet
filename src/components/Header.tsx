@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             className="text-5xl md:text-7xl font-bold mb-2 text-y2k-hotPink drop-shadow-[0_2px_0_rgba(255,255,255,0.8)]"
             style={{ textShadow: "3px 3px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF" }}
           >
-            Born in the Wrong Eras Tour
+            Born in the Wrong Era*s Tour
           </h1>
           <div 
             className="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none"
