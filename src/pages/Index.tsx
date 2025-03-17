@@ -129,7 +129,7 @@ const Index = () => {
         <Separator className="border-2 border-dashed border-white" />
       </div>
       
-      <Guestbook />
+      {/* <Guestbook /> */}
       
       <Footer />
       
