@@ -20,6 +20,10 @@ const Index = () => {
       hometown: "Las Vegas + The Twin Cities",
       favoriteEmoji: "🫣 or 💞",
       hobby: "bedazzling or making Sims she never plays",
+      twitter: "https://twitter.com/davvnmusic",
+      instagram: "https://instagram.com/davvn.music",
+      tiktok: "https://tiktok.com/@davvn.music",
+      spotify: "https://open.spotify.com/artist/1QF0qdoDTPGn3h3zl3YIpT?si=-tQ2nQ-lReG5HtmmHRynvg",
     },
     { 
       name: "Mike", 
@@ -30,6 +34,10 @@ const Index = () => {
       hometown: "Boston, MA",
       favoriteEmoji: "🍕 or 🤓",
       hobby: "cutting down trees on runescape",
+      twitter: "https://twitter.com/davvnmusic",
+      instagram: "https://instagram.com/davvn.music",
+      tiktok: "https://tiktok.com/@davvn.music",
+      spotify: "https://open.spotify.com/artist/1QF0qdoDTPGn3h3zl3YIpT?si=-tQ2nQ-lReG5HtmmHRynvg",
     },
     { 
       name: "Jack", 
@@ -40,6 +48,10 @@ const Index = () => {
       hometown: "St Paul, MN",
       favoriteEmoji: "❤️‍🔥 or ✨",
       hobby: "catching pokemon",
+      twitter: "https://twitter.com/jacktheunderdog",
+      instagram: "https://www.instagram.com/jacktheunderdog",
+      tiktok: "https://www.tiktok.com/jacktheunderdog",
+      spotify: "https://open.spotify.com/artist/5SAYvojx5xHsRISXBOZz0A?si=4bsJ9kwjRaiSwv4qN1dtTw",
     },
   ];
 
@@ -85,6 +97,10 @@ const Index = () => {
               hometown={member.hometown}
               favoriteEmoji={member.favoriteEmoji}
               hobby={member.hobby}
+              tiktok={member.tiktok}
+              instagram={member.instagram}
+              twitter={member.twitter}
+              spotify={member.spotify}
             />
           ))}
         </div>

@@ -21,11 +21,30 @@ type BandMemberProps = {
   hometown?: string;
   favoriteEmoji?: string;
   hobby?: string;
+  twitter?: string;
+  instagram?: string;
+  tiktok?: string;
+  spotify?: string;
 };
 
-const BandMemberBio = ({ name, role, img, bio, favoriteSong, hometown, favoriteEmoji, hobby }: BandMemberProps) => {
+const BandMemberBio = ({ name, role, img, bio, favoriteSong, hometown, favoriteEmoji, hobby, twitter, instagram, tiktok, spotify }: BandMemberProps) => {
   const defaultBio = `${name} is an amazing performer with a unique style and incredible talent. 
   They've been performing since they were young and continue to wow audiences everywhere!`;
+
+  const getSocialForIcon = (icon: string) => {
+    switch (icon) {
+      case "📸":
+        return instagram || "https://instagram.com";
+      case "🐦":
+        return twitter || "https://twitter.com";
+      case "📱":
+        return tiktok || "https://tiktok.com";
+      case "🎵":
+        return spotify || "https://spotify.com";
+      default:
+        return "https://google.com";
+    }
+  };
 
   return (
     <Dialog>
@@ -110,7 +129,9 @@ const BandMemberBio = ({ name, role, img, bio, favoriteSong, hometown, favoriteE
           </p>
           <div className="flex justify-center space-x-3 mt-2">
             {["📸", "🐦", "📱", "🎵"].map((icon, i) => (
-              <span key={i} className="cursor-pointer hover:scale-125 transition-transform">{icon}</span>
+              <span key={i} className="cursor-pointer hover:scale-125 transition-transform">
+                <a href={getSocialForIcon(icon)} target="_blank">{icon}</a>
+              </span>
             ))}
           </div>
         </div>
