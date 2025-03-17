@@ -29,7 +29,7 @@ const Index = () => {
       name: "Mike", 
       role: "davvn", 
       img: "/images/mike.jpg",
-      bio: "Mike is davvn's guitar virtuoso, bringing melodic riffs and nostalgic sounds to every performance. He started playing guitar after finding his dad's old instrument in the attic. He's obsessed with early 2000s rock bands and has an impressive collection of vintage guitar pedals.",
+      bio: "When Mike’s not rocking out playing guitar for davvn, you can find him on RuneScape, collecting gen-1 Pokemon cards, or obsessively watching any of the Boston sports teams. Mike started playing in bands all the way back in high school as a bass player but has since moved up 2 strings in the world.",
       favoriteSong: "Of all the Gin Joints in the World - Fall Out Boy",
       hometown: "Boston, MA",
       favoriteEmoji: "🍕 or 🤓",
