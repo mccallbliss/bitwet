@@ -42,7 +42,7 @@ const Index = () => {
     { 
       name: "Jack", 
       role: "Jack The Underdog", 
-      img: "/images/jtu-2.jpg",
+      img: "/images/jtu.jpg",
       bio: "Jack The Underdog is a pop punk artist and songwriter based in Nashville, TN. Jack’s music strives to create a space for all the “underdogs” of society to feel heard. When listening to Jack’s music, you’ll hear a wide array on influences - from pop punk to hyperpop to hip hop. Between Jack's original music that brings a modern twist to an early 2000's nostalgic sound, and his 'swemo' Taylor Swift covers, there’s something for everyone to enjoy. Jack is also a member of the Riot House, a Nashville based independent collective of alternative artists that aims to help amplify the voices within the alternative music community in Nashville.",
       favoriteSong: "LosT by Bring Me The Horizon",
       hometown: "St Paul, MN",
