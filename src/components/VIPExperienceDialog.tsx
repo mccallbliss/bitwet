@@ -17,6 +17,10 @@ interface VIPDialogProps {
 }
 
 const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
+  const handleVIPClickOut = () => {
+    window.open("https://jacktheunderdog.myshopify.com/products/vip-upgrade-for-the-born-in-the-wrong-eras-tour", '_blank').focus()
+  };
+  
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
@@ -47,11 +51,12 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
         
         <div className="p-6 max-h-[80vh] overflow-y-auto">
           <div className="text-center mb-6">
-            <div className="bg-y2k-purple text-white inline-block px-4 py-2 rounded-lg font-bold mb-2 border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] animate-pulse">
+            <button onClick={handleVIPClickOut}  className="bg-y2k-purple text-white inline-block px-4 py-2 rounded-lg font-bold mb-2 border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] animate-pulse">
               * * * LIMITED AVAILABILITY - RESERVE NOW * * *
-            </div>
+            </button>
             <DialogDescription className="text-y2k-purple text-center px-8">
-              Upgrade your concert experience with our exclusive VIP package - THE ultimate 2000s throwback fan experience!
+              Upgrade your concert experience with our exclusive VIP package
+              - THE ultimate 2000s throwback fan experience!
             </DialogDescription>
           </div>
           
@@ -60,10 +65,10 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-y2k-green mb-3 mx-auto">
                 <Camera className="text-white" size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-center text-y2k-hotPink">Meet & Greet Photos</h3>
+              <h3 className="text-xl font-bold mb-2 text-center text-y2k-hotPink">Signed Polaroid</h3>
               <p className="text-sm text-gray-600">
                 Exclusive photo opportunity with davvn and Jack The Underdog before the show! 
-                You'll get professional digital photos AND a printed Polaroid to take home!
+                You'll get to hang with the bands and recieve a signed Polaroid to take home.
               </p>
             </div>
             
@@ -84,8 +89,8 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-center text-y2k-hotPink">Merch Bundle</h3>
               <p className="text-sm text-gray-600">
-                Exclusive VIP merch pack including a limited edition tour t-shirt, 
-                enamel pin set, holographic sticker pack, and a Y2K-themed disposable camera!
+                Exclusive VIP merch pack - including limited edition merch items from both davvn and JTU
+                  featuring a "Born in the Wrong Era*s" tour t-shirt, sticker pack, mix cd, & more!
               </p>
             </div>
             
@@ -110,7 +115,7 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
                 <span className="bg-y2k-yellow text-y2k-purple px-2 py-1 rounded font-bold">TBA Additional Surprises!</span> More VIP perks to be 
                 announced closer to tour dates! Your VIP experience keeps getting better!
               </p>
-              <button className="bg-y2k-hotPink text-white px-6 py-2 rounded-lg font-bold border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] hover:bg-y2k-purple transition-colors">
+              <button onClick={handleVIPClickOut} className="bg-y2k-hotPink text-white px-6 py-2 rounded-lg font-bold border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] hover:bg-y2k-purple transition-colors">
                 🌟 GET VIP PASSES NOW 🌟
               </button>
             </div>

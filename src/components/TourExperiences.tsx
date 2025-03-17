@@ -109,7 +109,7 @@ const TourExperiences = () => {
             </div>
             <DialogDescription className="text-y2k-purple text-center px-8">
               Check out all the rad interactive experiences waiting for you at the "Born in the Wrong Eras" Tour! 
-              Each show features these amazing Y2K throwback activities that will transport you straight back to 2003!
+              Each show features these amazing Y2K throwback activities that will transport you straight back to 2002!
             </DialogDescription>
           </div>
           
@@ -132,7 +132,7 @@ const TourExperiences = () => {
               <h3 className="text-xl font-bold text-y2k-hotPink mb-2">⭐ VIP EXPERIENCE PACKAGE ⭐</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Upgrade to VIP for exclusive access to ALL experiences without waiting in line, 
-                plus a special Y2K-themed gift bag with limited edition merchandise!
+                plus a special Y2K merch bundle with limited edition items!
               </p>
               <VIPExperienceDialog>
                 <button className="bg-y2k-hotPink text-white px-6 py-2 rounded-lg font-bold border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] hover:bg-y2k-purple transition-colors">
