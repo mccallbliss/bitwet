@@ -53,7 +53,7 @@ const TourDates: React.FC = () => {
                   <td>{tour.venue}</td>
                   <td>
                     {tour.link ? (
-                      <div>
+                      <div className="flex items-center justify-center">
                         {tour.soldOut ? (
                           <Badge link={tour.link} className="bg-red-500 hover:bg-red-600 rainbow-text animate-blink">
                             SOLD OUT!!!
@@ -65,7 +65,7 @@ const TourDates: React.FC = () => {
                         )}
                       </div>
                     ) : (
-                      <div>
+                      <div className="flex items-center justify-center">
                         <Badge className="bg-pink-500 hover:bg-pink-600 rainbow-text animate-blink">
                             Tickets at door!
                         </Badge>
