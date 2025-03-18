@@ -110,13 +110,13 @@ const VIPExperienceDialog = ({ children }: VIPDialogProps) => {
           
           <div className="bg-gradient-to-r from-y2k-green to-y2k-blue p-4 rounded-lg border-2 border-white mt-4">
             <div className="text-center">
-              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-[1px_1px_0_rgba(0,0,0,0.3)]">⭐ VIP PASSES - $50 ⭐</h3>
+              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-[1px_1px_0_rgba(0,0,0,0.3)]">⭐ VIP UPGRADE - $50 ⭐</h3>
               <p className="text-sm text-white mb-4">
                 <span className="bg-y2k-yellow text-y2k-purple px-2 py-1 rounded font-bold">TBA Additional Surprises!</span> More VIP perks to be 
                 announced closer to tour dates! Your VIP experience keeps getting better!
               </p>
               <button onClick={handleVIPClickOut} className="bg-y2k-hotPink text-white px-6 py-2 rounded-lg font-bold border-2 border-white shadow-[3px_3px_0_rgba(0,0,0,0.2)] hover:bg-y2k-purple transition-colors">
-                🌟 GET VIP PASSES NOW 🌟
+                🌟 GET VIP UPGRADE NOW 🌟
               </button>
             </div>
           </div>

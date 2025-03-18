@@ -82,7 +82,7 @@ const TourDates: React.FC = () => {
       <div className="text-center">
         <VIPExperienceDialog>
           <button className="y2k-button">
-            <span className="rainbow-text">✧･ﾟ</span> Get VIP Passes <span className="rainbow-text">✧･ﾟ</span>
+            <span className="rainbow-text">✧₊˚⊹</span> Get VIP Passes <span className="rainbow-text">✧₊˚⊹</span>
           </button>
         </VIPExperienceDialog>
       </div>
