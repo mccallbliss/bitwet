@@ -25,7 +25,7 @@ const Footer = () => {
             <h3 className="text-xl text-secondary font-bold">EXPERIENCES</h3>
             <div className="space-y-2 text-sm">
               <div className="block text-muted-foreground hover:text-primary transition-colors">
-                Adult Scholastic Book Fair
+                Scholastic Book Fair Merch Vibes
               </div>
               <div className="block text-muted-foreground hover:text-primary transition-colors">
                 Friendship Bracelets
@@ -34,7 +34,7 @@ const Footer = () => {
                 Poster Signing
               </div>
               <div className="block text-muted-foreground hover:text-primary transition-colors">
-                Meet & Greet at Merch
+                Free Meet & Greet
               </div>
             </div>
           </div>
