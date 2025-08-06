@@ -25,7 +25,7 @@ const BandsSection = () => {
           
           <BandProfile
             name="JACK THE UNDERDOG"
-            description="Jack The Underdog is a pop punk artist and songwriter based in Nashville, TN. Jack’s music strives to create a space for all the underdogs of society to feel heard, acknowledged, and welcomed in. His songs are inspired by everything from pop punk to hyperpop to hip hop, so between his original music and his cover of Taylor Swift’s “Back To December”, there’s something for everyone to enjoy."
+            description="Jack The Underdog is an alternative hyperpoppunk artist and songwriter based in Nashville, TN. Jack’s music strives to create a space for all the underdogs of society to feel heard, acknowledged, and welcomed in. His songs are inspired by everything from pop punk to hyperpop to hip hop, so between his original music and his cover of Taylor Swift’s “Back To December”, there’s something for everyone."
             links={[
               { platform: "YOUTUBE", url: "hhttps://www.youtube.com/channel/UCY9JPio2HZTucHpe9BN6daw" },
               { platform: "TIKTOK", url: "https://tiktok.com/@jacktheunderdog" },
